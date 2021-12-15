@@ -26,8 +26,5 @@
   },
   "name": "playhub",
   "author": "Omer Dogan",
-  "module": "dist/playhub.esm.js",
-  "devDependencies": {
-    
-  }
+  "module": "dist/playhub.esm.js"
 }
