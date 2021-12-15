@@ -1,6 +1,6 @@
 import dynamicLinks from '@react-native-firebase/dynamic-links';
-import {setData, getData} from 'src/helpers';
-import {readChapterEvent, downloadEvent} from 'src/api';
+import {setData, getData} from './helpers';
+import {readChapterEvent, downloadEvent} from './api';
 
 export function initialize(){
   syncUid()
