@@ -4,15 +4,6 @@
   "description": "Playhub plugin.",
   "license": "MIT",
   "main": "src/index.js",
-  "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "test": "tsdx test",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
-  },
   "peerDependencies": {},
   "author": "Omer Dogan",
   "devDependencies": {
