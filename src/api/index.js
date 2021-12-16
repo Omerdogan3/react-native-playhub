@@ -1,12 +1,12 @@
 // General api to access data
 import ApiConstants from './ApiConstants';
-import axios, {AxiosResponse} from 'axios';
+import axios from 'axios';
 import {getBundleId} from 'react-native-device-info';
 import {getData} from '../helpers';
 
 const {BASE_URL, USER_EVENT} = ApiConstants;
 
-export async function readChapterEvent(eventValue: number){
+export async function readChapterEvent(eventValue){
 	userEvent("READ_CHAPTER", eventValue);
 }
 
@@ -14,15 +14,15 @@ export async function downloadEvent(){
 	userEvent("DOWNLOAD", 0);
 }
 
-export async function highScoreEvent(eventValue: number){
+export async function highScoreEvent(eventValue){
 	userEvent("DOWNLOAD", eventValue);
 }
 
-export async function levelUpEvent(eventValue: number){
+export async function levelUpEvent(eventValue){
 	userEvent("LEVEL_UP", eventValue);
 }
 
-async function userEvent(eventName: string, eventValue: number){
+async function userEvent(eventName, eventValue){
 	const uid = await getData("uid")
 	if(uid){
 		axios.post(BASE_URL + "/" + USER_EVENT, {
@@ -30,10 +30,10 @@ async function userEvent(eventName: string, eventValue: number){
 			eventValue: eventValue,
 			appId: getBundleId()
 		}, {headers: {'Authorization': uid}})
-		.catch((err: AxiosResponse)=> {
+		.catch((err)=> {
 			console.log(err)
 		})
-		.then((response: AxiosResponse) => {
+		.then((response) => {
 			console.log(response.data);
 		});
 	}

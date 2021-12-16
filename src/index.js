@@ -27,6 +27,6 @@ const syncUid = async () => {
 }
 
 
-export const readChapter = (eventValue: number) => {
+export const readChapter = (eventValue) => {
   readChapterEvent(eventValue)
 }
