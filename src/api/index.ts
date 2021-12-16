@@ -1,6 +1,6 @@
 // General api to access data
 import ApiConstants from './ApiConstants';
-import axios from 'axios';
+import axios, {AxiosResponse} from 'axios';
 import {getBundleId} from 'react-native-device-info';
 import {getData} from '../helpers';
 
@@ -30,10 +30,10 @@ async function userEvent(eventName: string, eventValue: number){
 			eventValue: eventValue,
 			appId: getBundleId()
 		}, {headers: {'Authorization': uid}})
-		.catch((err)=> {
+		.catch((err: AxiosResponse)=> {
 			console.log(err)
 		})
-		.then((response) => {
+		.then((response: AxiosResponse) => {
 			console.log(response.data);
 		});
 	}
