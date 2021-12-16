@@ -6,7 +6,7 @@ import {getData} from '../helpers';
 
 const {BASE_URL, USER_EVENT} = ApiConstants;
 
-export async function readChapterEvent(eventValue){
+export async function readChapterEvent(eventValue: number){
 	userEvent("READ_CHAPTER", eventValue);
 }
 
@@ -14,15 +14,15 @@ export async function downloadEvent(){
 	userEvent("DOWNLOAD", 0);
 }
 
-export async function highScoreEvent(eventValue){
+export async function highScoreEvent(eventValue: number){
 	userEvent("DOWNLOAD", eventValue);
 }
 
-export async function levelUpEvent(eventValue){
+export async function levelUpEvent(eventValue: number){
 	userEvent("LEVEL_UP", eventValue);
 }
 
-async function userEvent(eventName, eventValue){
+async function userEvent(eventName: string, eventValue: number){
 	const uid = await getData("uid")
 	if(uid){
 		axios.post(BASE_URL + "/" + USER_EVENT, {
