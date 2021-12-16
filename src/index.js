@@ -1,10 +1,9 @@
 import dynamicLinks from '@react-native-firebase/dynamic-links';
 import {setData, getData} from './helpers';
-import {readChapterEvent, downloadEvent} from './api';
+import {readChapterEvent, highScoreEvent, downloadEvent} from './api';
 
 export function initialize(){
   syncUid()
-  readChapterEvent(10)
 }
 
 const syncUid = async () => {
@@ -29,4 +28,12 @@ const syncUid = async () => {
 
 export const readChapter = (eventValue) => {
   readChapterEvent(eventValue)
+}
+
+export const highScore = (eventValue) => {
+  highScoreEvent(eventValue)
+}
+
+export const levelUp = (eventValue) => {
+  levelUpEvent(eventValue)
 }

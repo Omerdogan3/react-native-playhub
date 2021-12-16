@@ -15,7 +15,7 @@ export async function downloadEvent(){
 }
 
 export async function highScoreEvent(eventValue){
-	userEvent("DOWNLOAD", eventValue);
+	userEvent("HIGH_SCORE", eventValue);
 }
 
 export async function levelUpEvent(eventValue){
