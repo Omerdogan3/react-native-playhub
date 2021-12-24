@@ -10,7 +10,7 @@
     "axios": "^0.19.0",
     "react-native-device-info": "^5.2.1",
     "@react-native-firebase/dynamic-links": "^13.1.0",
-    "@react-native-async-storage/async-storage": "^1.15.14",
+    "@react-native-community/async-storage": "^1.12.1",
 
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.1",
