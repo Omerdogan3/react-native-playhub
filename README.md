@@ -34,4 +34,12 @@ useEffect(()=> {
 }, [])
 ```
 
+Send event functions in app.
+```bash
+import {highScore, readChapter, levelUp, scanBarcode} from  '@omerdogan3/react-native-playhub';
 
+highScore(100)
+readChapter(10)
+levelUp(5)
+scanBarcode(10)
+```
