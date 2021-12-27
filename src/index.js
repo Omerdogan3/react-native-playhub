@@ -1,7 +1,7 @@
 import {Alert} from 'react-native';
 import dynamicLinks from '@react-native-firebase/dynamic-links';
 import {setData, getData} from './helpers';
-import {readChapterEvent, highScoreEvent, downloadEvent} from './api';
+import {readChapterEvent, highScoreEvent, downloadEvent, scanBarcodeEvent} from './api';
 import CryptoJS from 'crypto-js';
 
 export function initialize(){
@@ -42,4 +42,8 @@ export const highScore = (eventValue) => {
 
 export const levelUp = (eventValue) => {
   levelUpEvent(eventValue)
+}
+
+export const scanBarcode = (eventValue) => {
+  scanBarcodeEvent(eventValue)
 }

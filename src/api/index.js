@@ -22,6 +22,10 @@ export async function levelUpEvent(eventValue){
 	userEvent("LEVEL_UP", eventValue);
 }
 
+export async function scanBarcodeEvent(eventValue){
+	userEvent("SCAN_BARCODE", eventValue);
+}
+
 async function userEvent(eventName, eventValue){
 	const uid = await getData("uid")
 	if(uid){
@@ -37,5 +41,4 @@ async function userEvent(eventName, eventValue){
 			console.log(response.data);
 		});
 	}
-
 }
