@@ -1,7 +1,11 @@
 {
-  "name": "playhub",
-  "version": "0.1.2",
+  "name": "@omerdogan3/react-native-playhub",
+  "version": "0.1.7",
   "description": "Playhub plugin.",
+  "repository": "git://github.com/Omerdogan3/react-native-playhub.git",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "main": "src/index.js",
   "peerDependencies": {},
@@ -11,7 +15,7 @@
     "react-native-device-info": "^5.2.1",
     "@react-native-firebase/dynamic-links": "^13.1.0",
     "@react-native-community/async-storage": "^1.12.1",
-
+    "crypto-js": "^4.1.1",
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
