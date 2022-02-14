@@ -1,6 +1,6 @@
 {
   "name": "@omerdogan3/react-native-playhub",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Playhub plugin.",
   "repository": "git://github.com/Omerdogan3/react-native-playhub.git",
   "publishConfig": {

@@ -1,7 +1,7 @@
 import {Alert} from 'react-native';
 import dynamicLinks from '@react-native-firebase/dynamic-links';
 import {setData, getData} from './helpers';
-import {readChapterEvent, highScoreEvent, downloadEvent, scanBarcodeEvent} from './api';
+import {readChapterEvent, highScoreEvent, levelUpEvent, downloadEvent, scanBarcodeEvent} from './api';
 import CryptoJS from 'crypto-js';
 
 export function initialize(){
