@@ -10,14 +10,6 @@ Before starting, please install libraries below.
 - ```@react-native-community/async-storage```
 - ```crypto-js```
 
-
-### Update .npmrc
-Create a file named ```.npmrc```. Replace its content with these.
-```
-npm.pkg.github.com/:_authToken=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
-@omerdogan3:registry=https://npm.pkg.github.com
-```
-
 ### Installation
 ```bash
 yarn add @omerdogan3/react-native-playhub
