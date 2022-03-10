@@ -22,6 +22,14 @@ export async function levelUpEvent(eventValue){
 	userEvent("LEVEL_UP", eventValue);
 }
 
+export async function displayAnomymousStoryEvent(eventValue){
+	userEvent("DISPLAY_ANONYMOUS_STORY", eventValue);
+}
+
+export async function signInEvent(){
+	userEvent("SIGN_IN", 0);
+}
+
 export async function scanBarcodeEvent(eventValue){
 	userEvent("SCAN_BARCODE", eventValue);
 }
