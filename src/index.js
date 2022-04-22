@@ -13,8 +13,9 @@ const syncUid = async () => {
     console.log("link", link)
     
     if(link && link.url){
-      let uid = link.url.split("uid=")[1];
+      //let uid = link.url.split("uid=")[1];
       //uid = CryptoJS.AES.decrypt(uid, "361.Rocks").toString(CryptoJS.enc.Utf8);
+      let uid = link.url.replace(/.*uid=([^&]*)\&apn.*/,'$1');
       const exUid = await getData("uid");
 
       // Alert.alert(JSON.stringify(uid))
